@@ -5,4 +5,3 @@ A small website where users can:
 - View their learning topics.
 - Mark a topic as completed.
 - Delete a topic.
-- View completed and pending topic counts.
