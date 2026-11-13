@@ -1,1 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Learning Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Daily Learning Tracker</h1>
+            <p>Track your learning journey and mark topics as completed</p>
+        </header>
 
+        <div class="dashboard">
+            <div class="stats-container">
+                <div class="stat-card">
+                    <h3>Total Topics</h3>
+                    <div class="stat-value" id="total-topics">0</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Completed</h3>
+                    <div class="stat-value completed" id="completed-topics">0</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Pending</h3>
+                    <div class="stat-value pending" id="pending-topics">0</div>
+                </div>
+            </div>
+
+            <div class="progress-container">
+                <h3>Learning Progress</h3>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progress-fill"></div>
+                    <div class="progress-text" id="progress-text">0%</div>
+                </div>
+            </div>
+
+            <div class="add-topic-form">
+                <h3>Add New Topic</h3>
+                <form id="topic-form">
+                    <input type="text" id="topic-input" placeholder="Enter learning topic..." required>
+                    <button type="submit">Add Topic</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="topics-container">
+            <h2>Your Learning Topics</h2>
+            <div id="topics-list">
+                <!-- Topics will be added here dynamically -->
+                <div class="empty-message">No topics added yet. Add your first learning topic above!</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
